@@ -14,8 +14,8 @@ while True:
 
         if guesses < min_guesses:
             min_guesses = guesses
-        if min_guesses < float("inf"):
-            print("Best score: ", min_guesses)
+        #if min_guesses < float("inf"):
+        print("Best score: ", min_guesses)
 
         play_again = input("Would you like to play again? (yes/no): ")
         if play_again.lower() != "yes":
