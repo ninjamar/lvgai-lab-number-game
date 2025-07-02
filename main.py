@@ -10,8 +10,8 @@ while True:
     if guess == n:
         print("You guessed it!")
         print("You guessed it in", guesses, "guesses")
-        
-        if guesses > min_guesses:
+
+        if guesses < min_guesses:
             min_guesses = guesses
         if min_guesses > 0:
             print("Best score: ", min_guesses)
