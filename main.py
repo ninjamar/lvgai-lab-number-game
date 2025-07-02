@@ -2,9 +2,10 @@ import random
 
 n = random.randint(1, 100)
 
-min_guesses = 0
+min_guesses = float("inf")
 guesses = 0
 while True:
+
     guess = int(input("Guess the number between 1 and 100: "))
     guesses += 1
     if guess == n:
@@ -13,7 +14,7 @@ while True:
 
         if guesses < min_guesses:
             min_guesses = guesses
-        if min_guesses > 0:
+        if min_guesses < float("inf"):
             print("Best score: ", min_guesses)
 
         play_again = input("Would you like to play again? (yes/no): ")
